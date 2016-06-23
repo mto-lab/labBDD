@@ -12,14 +12,15 @@ import cucumber.api.java.pl.Zakładając;
 
 
 public class EstimateSteps {
-    @Zakładając("^, że chcę się dostać z \"([^\"]*)\" do \"([^\"]*)\"$")
-    public void givenTrainFromTo(String from, String to) throws Throwable {
+
+    @Zakładając("^, że chcę się dostać z <start> do <cel>$")
+    public void żeChcęSięDostaćZStartDoCel() throws Throwable {
         // Write code here that turns the phrase above into concrete actions
         throw new PendingException();
     }
 
-    @I("^następny pociąg odjeżdża o (\\d+):(\\d+) na linii \"([^\"]*)\"$")
-    public void nextTrainLeavesOn(int startTimeHours, int startTimeMinutes, String line) throws Throwable {
+    @I("^następny pociąg odjeżdża o <odjazd> na linii <linia>$")
+    public void następnyPociągOdjeżdżaOOdjazdNaLiniiLinia() throws Throwable {
         // Write code here that turns the phrase above into concrete actions
         throw new PendingException();
     }
@@ -30,8 +31,8 @@ public class EstimateSteps {
         throw new PendingException();
     }
 
-    @Wtedy("^powinienem uzyskać następujący szacowany czas przyjazdu: (\\d+):(\\d+)$")
-    public void shouldGetNextEstimatedArrivingTime(int timeHours, int timeMinutes) throws Throwable {
+    @Wtedy("^powinienem uzyskać następujący szacowany czas przyjazdu: <przyjazd>$")
+    public void powinienemUzyskaćNastępującySzacowanyCzasPrzyjazduPrzyjazd() throws Throwable {
         // Write code here that turns the phrase above into concrete actions
         throw new PendingException();
     }
